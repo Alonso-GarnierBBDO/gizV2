@@ -1,0 +1,87 @@
+// Fonts
+@font-face {
+    font-family: bulleto_killa_font;
+    src: url(../fonts/bulletto/Bulletto_Killa.ttf);
+}
+
+@font-face {
+    font-family: noir_bold;
+    src: url(../fonts/noir_pro/NoirPro-Bold.otf);
+}
+
+@font-face {
+    font-family: noir_heavy;
+    src: url(../fonts/noir_pro/NoirPro-Heavy.otf);
+}
+
+@font-face {
+    font-family: noir_light;
+    src: url(../fonts/noir_pro/NoirPro-Light.otf);
+}
+
+@font-face {
+    font-family: noir_medium;
+    src: url(../fonts/noir_pro/NoirPro-Medium.otf);
+}
+
+@font-face {
+    font-family: noir_regular;
+    src: url(../fonts/noir_pro/NoirPro-Regular.otf);
+}
+
+@font-face {
+    font-family: noir_semi_bold;
+    src: url(../fonts/noir_pro/NoirPro-SemiBold.otf);
+}
+
+
+// Animation
+
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}
+
+@mixin animate($name, $duration, $type, $loop){
+    animation: $name $duration $type $loop;
+}
+
+// Convert px to rem
+
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit(16px)}rem;
+}
+
+// Media query
+@mixin bp($point) {
+    @if $point == escritorio {
+        @media (min-width: 1600px) { @content; }
+    }
+    @else if $point == laptop {
+        @media (min-width: 1100px) { @content; }
+    }
+    @else if $point == tablet {
+        @media (min-width: 700px)  { @content; }
+    }
+}
+
+
+// Colors
+
+$color_principal: #272D38;
+
+
+// Variables Fonts
+
+$font_primero: bulleto_killa_font;
+$font_segundo: noir_bold;
+$font_tercero: noir_heavy;
+$font_cuarto: noir_light;
+$font_cinco: noir_medium;
+$font_seis: noir_regular;
+$font_siete: noir_semi_bold;

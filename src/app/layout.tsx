@@ -4,6 +4,8 @@ import type { Metadata } from 'next'
 import HeaderComponent from '@/components/static/header';
 import FooterComponent from '@/components/static/footer';
 
+import '@/assets/scss/global.scss';
+
 
 export const metadata: Metadata = {
   title: 'Polinizando Costa Rica',

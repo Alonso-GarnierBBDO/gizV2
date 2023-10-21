@@ -1,0 +1,22 @@
+header{
+
+    img{
+        height: 100%;
+        width: auto;
+    }
+
+    .icon_menu{
+        svg{
+            fill: $color_principal;
+        }
+    }
+
+}
+
+.menu_item{
+    span{
+        font-family: $font_primero;
+        font-size: rem(30px);
+        color: $color_principal;
+    }
+}
