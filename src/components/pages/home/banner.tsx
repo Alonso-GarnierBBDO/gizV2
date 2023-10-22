@@ -8,7 +8,7 @@ function BannerComponent(){
     const [heightView, setHeightView] = useState(0);
     const styleBanner = {
         height: heightView,
-        backgroundImage: `url(${BannerImage.src})`,
+        backgroundImage: `linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255,254,253,0) 30%), url(${BannerImage.src})`,
     }
 
     useEffect(()=>{
