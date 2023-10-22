@@ -1,10 +1,13 @@
+import BannerComponent from "@/components/pages/home/banner";
 
 
 function Home(){
 
   return(
     <>
-      <h1>Hola</h1>
+      <section>
+        <BannerComponent/>
+      </section>
     </>
   );
 

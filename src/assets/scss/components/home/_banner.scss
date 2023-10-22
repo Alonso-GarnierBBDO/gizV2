@@ -1,0 +1,36 @@
+.bannerHome{
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    box-shadow: 0px -181px 100px -56px rgba(255, 255, 255, 0.8) inset;
+
+    section{
+
+        width: 55vw;
+        height: 55vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 50%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        rotate: 40deg;
+        border: 1px dashed $color_segundo;
+
+
+        h1{
+            font-size: rem(35px);
+            line-height: 35px;
+            text-align: center;
+            rotate: -40deg;
+            color: $color_segundo;
+            font-family: $font_primero;
+            letter-spacing: 4px;
+        }
+    }
+
+}

@@ -21,7 +21,7 @@ import {
   Button,
 } from "@mui/material";
 
-import { useState } from "react";
+import { useState, useEffect, useRef, Ref, MutableRefObject } from "react";
 
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -33,17 +33,32 @@ interface Props {
 }
 
 function HeaderComponent(props: Props) {
+
   const drawerWidth = 240;
   const navItems = ["Home", "About", "Contact"];
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
-
+  const [headerHeight, setHeaderHeight] = useState(0);
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+  const container = window !== undefined ? () => window().document.body : undefined;
+  const headerElement : MutableRefObject<HTMLElement | null> = useRef(null);
 
-  const container =
-    window !== undefined ? () => window().document.body : undefined;
+  useEffect(() => {
+
+    if(headerElement){
+      const currentHeader = headerElement.current;
+      const mainElement : HTMLElement | null  = document.querySelector('main');
+      if(currentHeader && mainElement){
+        const currentHeaderHeight = currentHeader.offsetHeight;
+        mainElement.style.marginTop = `${currentHeaderHeight}px`;
+        console.log(mainElement);
+      }
+    }
+
+  }, []);
+
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
@@ -63,7 +78,7 @@ function HeaderComponent(props: Props) {
     <>
       <header>
         <CssBaseline />
-        <AppBar component="nav" sx={{ backgroundColor: "white" }}>
+        <AppBar component="nav" sx={{ backgroundColor: "white" }} ref={headerElement}>
           <Toolbar sx={{ justifyContent: "space-between", padding: '10px 20px' }}>
             <Image src={Logo.src} alt="Logo" width={100} height={100} />
             <IconButton
