@@ -8,7 +8,7 @@ function BannerComponent(){
     const [heightView, setHeightView] = useState(0);
     const styleBanner = {
         height: heightView,
-        backgroundImage: `linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255,254,253,0) 30%), url(${BannerImage.src})`,
+        backgroundImage: `linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255,254,253,0) 40%), url(${BannerImage.src})`,
     }
 
     useEffect(()=>{
@@ -24,8 +24,15 @@ function BannerComponent(){
     return (
         <>
             <section className="bannerHome" style={styleBanner}>
-                <section>
+                <section className="circle">
                     <h1>Polinizar <br/> la tierra</h1>
+                </section>
+                <section className="content_absolute">
+                    <p>Significa que las abejas y su vuelo garantizan la seguridad alimentaria de la población mundial.</p>
+                    <section className="group">
+                        <a href="">Únete</a>
+                        <a href="">Soy apicultor</a>
+                    </section>
                 </section>
             </section>
         </>
