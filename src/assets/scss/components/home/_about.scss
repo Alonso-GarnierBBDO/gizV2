@@ -1,0 +1,38 @@
+.about_home{
+
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: $color_seis;
+    padding: 30px 20px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+
+    h2{
+        text-align: center;
+        font-family: $font_primero;
+        font-size: rem(30px);
+        color: $color_segundo;
+        letter-spacing: 4px;
+        margin: 0px;
+    }
+
+    p{
+        text-align: center;
+        font-size: rem(14px);
+        font-family: $font_cuarto;
+        color: $color_segundo;
+        margin: 0px;
+    }
+
+    strong{
+        font-family: $font_cinco;
+    }
+
+    .image{
+        display: flex;
+        justify-content: center;
+        margin: 20px 0px;
+    }
+
+}

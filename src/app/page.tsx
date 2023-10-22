@@ -1,3 +1,4 @@
+import AboutComponent from "@/components/pages/home/about";
 import BannerComponent from "@/components/pages/home/banner";
 
 
@@ -7,6 +8,7 @@ function Home(){
     <>
       <section>
         <BannerComponent/>
+        <AboutComponent/>
       </section>
     </>
   );
