@@ -75,8 +75,10 @@
 
 }
 
-.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before{
-    display: none;
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before,
+.css-67l5gl:before
+{
+    display: none !important;
 }
 
 .css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:first-of-type,
