@@ -2,6 +2,7 @@ import AboutComponent from "@/components/pages/home/about";
 import ApiculturaComponent from "@/components/pages/home/apicultura";
 import BannerComponent from "@/components/pages/home/banner";
 import ConstribuirComponent from "@/components/pages/home/constribuir";
+import ContactoFormComponent from "@/components/pages/home/contacto";
 import EntrevistasComponent from "@/components/pages/home/entrevistas";
 import MapaComponent from "@/components/pages/home/mapa";
 import NoticiasComponent from "@/components/pages/home/noticias";
@@ -23,6 +24,7 @@ function Home(){
         <NoticiasComponent/>
         <PreguntasFrecuentesComponent/>
         <EntrevistasComponent/>
+        <ContactoFormComponent/>
       </section>
     </>
   );
