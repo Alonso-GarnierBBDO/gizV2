@@ -1,0 +1,83 @@
+.preguntas_frecuentes_seccion{
+
+    padding: 0px 20px;
+
+    .image_abeja{
+
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: rem(45.998px);
+            height: auto;
+        }
+
+    }
+
+    h2{
+        text-align: center;
+        font-family: $font_primero;
+        font-size: rem(30px);
+        color: $color_nueve;
+        letter-spacing: 4px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .accordeon{
+
+        .item-acordeon{
+
+            margin: 25px 0px;
+
+            div{
+                padding: 0px;
+                margin: 0px;
+
+                h3{
+                    margin: 0px;
+                    color: $color-quince;
+                    font-size: rem(14px);
+                    font-family: $font_cinco;
+                    transition: .2s ease;
+                }
+
+                path{
+                    fill: $color-quince;
+                    transition: .2s ease;
+                }
+
+                p{
+                    font-size: rem(14px);
+                    font-family: $font_cuarto;
+                    line-height: 140%;
+                    color: $color-dieciseis;
+                    margin: 0px;
+                }
+
+            }
+
+            .Mui-expanded{
+                h3{
+                    color: $color_siete;
+                }
+
+                path{
+                    fill: $color_siete;
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root:before{
+    display: none;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root.Mui-expanded:first-of-type,
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    box-shadow: none;
+}

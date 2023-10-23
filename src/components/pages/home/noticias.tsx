@@ -126,7 +126,7 @@ function NoticiasComponent(){
                     }
                 </section>
                 <section className="more_blogs">
-                    <button onClick={moreBlogs}>
+                    <button onClick={moreBlogs} disabled={loading}>
                         Ver más
                         {
                             loading ? 
