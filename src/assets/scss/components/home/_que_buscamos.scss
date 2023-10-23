@@ -53,6 +53,9 @@
 
             ul{
 
+                margin: 0px;
+                margin-top: 20px;
+
                 li{
 
                     list-style: none;
@@ -80,7 +83,8 @@
                     p{
                         margin: 0px;
                         font-family: $font_cuarto;
-                        color: $color_cuarto    ;
+                        color: $color_cuarto;
+                        font-size: rem(14px);
 
                         strong{
                             font-family: $font_segundo;

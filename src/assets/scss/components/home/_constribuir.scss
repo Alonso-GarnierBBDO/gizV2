@@ -1,0 +1,298 @@
+.constribuir_section {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    .content-header {
+      width: 88%;
+      display: flex;
+      align-items: center;
+      position: relative;
+      margin-bottom: 20px;
+
+      .image {
+        background-color: $color_siete;
+        padding: 10px;
+        height: 20vw;
+        width: 20vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        left: -10vw;
+        pointer-events: none;
+        user-select: none;
+
+        img {
+          width: 80%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+
+      .title {
+        background-color: $color_siete;
+        width: calc(100%);
+        font-size: rem(14px);
+        padding-left: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+        h2 {
+          color: $color_segundo;
+          font-family: $font_segundo;
+          white-space: nowrap;
+          width: calc(100% - 10px);
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+    }
+
+    h2 {
+      margin: 0px;
+    }
+  }
+
+  .content {
+    padding: 0px 20px;
+    padding-bottom: 30px;
+
+    p {
+      font-size: rem(14px);
+      font-family: $font_cuarto;
+      text-align: center;
+
+      strong {
+        font-family: $font_siete;
+      }
+    }
+
+    .exagono {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-gap: 10px;
+
+      div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:nth-of-type(1) {
+          grid-area: 1 / 2 / 1 / span 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: translateY(25%);
+
+          .content_hexagono {
+            svg {
+              path {
+                fill: $color_siete;
+              }
+            }
+
+            .text {
+              p {
+                font-size: rem(10px);
+                color: $color_siete;
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(2) {
+          grid-area: 2;
+          transform: translate(12%, -16%);
+
+          .content_hexagono {
+            svg {
+              path {
+                fill: $color_nueve;
+              }
+            }
+
+            .text {
+              p {
+                font-size: rem(10px);
+                color: $color_nueve;
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(3) {
+          grid-area: 2 / 4;
+          transform: translate(-12%, -16%);
+
+          .content_hexagono {
+            svg {
+              path {
+                fill: $color_cinco;
+              }
+            }
+
+            .text {
+              p {
+                font-size: rem(10px);
+                color: $color_cinco;
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(4) {
+          grid-area: 3;
+          transform: translate(12%, 14%);
+
+          .content_hexagono {
+            svg {
+              path {
+                fill: $color_diez;
+              }
+            }
+
+            .text {
+              p {
+                font-size: rem(10px);
+                color: $color_diez;
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(5) {
+          grid-area: 3 / 4;
+          transform: translate(-12%, 14%);
+
+          .content_hexagono {
+            svg {
+              path {
+                fill: $color_once;
+              }
+            }
+
+            .text {
+              p {
+                font-size: rem(10px);
+                color: $color_once;
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(6) {
+          grid-area: 4 / 2 / 4 / span 2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transform: translateY(-29%);
+
+          .content_hexagono {
+            svg {
+              path {
+                fill: $color_tercero;
+              }
+            }
+
+            .text {
+              p {
+                font-size: rem(10px);
+                color: $color_tercero;
+              }
+            }
+          }
+        }
+
+        &:nth-of-type(7) {
+          grid-area: 2 / span 2 / span 2;
+
+          .content_hexagono {
+            width: 35vw;
+            height: 35vw;
+
+            svg {
+              path {
+                fill: $color_ocho;
+              }
+            }
+
+            .text {
+              p {
+                font-size: rem(16px);
+                color: $color_ocho;
+              }
+            }
+          }
+        }
+
+        .content_hexagono {
+          width: 25vw;
+          height: 25vw;
+          position: relative;
+
+          .hexagono {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+
+            svg {
+              width: 100%;
+              height: 100%;
+              transform: scale(1.4) translateY(4px);
+            }
+          }
+
+          .white {
+            svg {
+              position: absolute;
+              transform: scale(1.25) translateY(4px);
+              path {
+                fill: $color_segundo;
+              }
+            }
+          }
+
+          .text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 4;
+            position: relative;
+            width: 90%;
+            height: 100%;
+            margin: auto;
+
+            p {
+              font-size: rem(13px);
+              font-family: $font_segundo;
+              line-height: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .images{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 0px 20px;
+
+    img{
+        height: 45px;
+        width: auto;
+    }
+
+  }
+
+}
