@@ -1,0 +1,307 @@
+.noticias_seccion{
+
+    padding: 30px 20px;
+
+    .image_abeja{
+
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: rem(45.998px);
+            height: auto;
+        }
+
+    }
+
+    h2{
+        text-align: center;
+        font-family: $font_primero;
+        font-size: rem(30px);
+        color: $color_diez;
+        letter-spacing: 4px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .noticia_destacada{
+
+        margin-bottom: 15px;
+
+        .image{
+
+            width: 100%;
+            height: 250px;
+            border-top-right-radius: 50px;
+            border-bottom-left-radius: 50px;
+            overflow: hidden;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                user-select: none;
+                pointer-events: none;
+            }
+
+        }
+
+        .content{
+            
+            display: grid;
+            place-items: center;
+
+            h3{
+
+                font-size: rem(16px);
+                text-align: center;
+                color: $color_doce;
+                font-family: $font_cinco;
+                width: 80%;
+                margin: 15px 0px;
+
+            }
+
+            p{
+                margin: 0px;
+                color: $color_trece;
+                font-family: $font_ocho;
+                font-weight: 400;
+                font-size: rem(14px);
+                font-style: normal;
+                line-height: 20px;
+                margin-bottom: 15px;
+            }
+
+        }
+
+        a{
+            text-decoration: none;       
+            font-size: rem(14px);
+            font-family: $font_segundo;
+            margin-bottom: 15px;
+            display: block;
+            color: $color_catorce;
+
+            span{
+                text-transform: lowercase;
+            }
+            
+        }
+
+        .visualizacion{
+
+            display: flex;
+            column-gap: 10px;
+
+            section{
+                display: flex;
+                align-items: center;
+                column-gap: 4px;
+
+                img{
+                    width: rem(20px);
+                    height: auto;
+                }
+
+                span{
+                    font-family: $font_ocho;
+                    font-weight: 400;
+                    font-style: normal;
+                    line-height: 20px;
+                    color: $color_trece;
+                    font-size: rem(14px);
+                }
+
+            }
+
+        }
+
+    }
+
+    .all_noticias{
+        
+        margin-top: 30px;
+        display: block;
+
+        .blog{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            margin-bottom: 15px;
+
+
+            &:last-of-type{
+                margin-bottom: 0px;
+            }
+
+            .content{
+                padding: 10px 0px;
+            }
+
+            h3{
+
+                font-size: rem(15px);
+                color: $color_doce;
+                font-family: $font_seis;
+                width: 80%;
+                margin: 15px 0px;
+                white-space: nowrap;
+                width: 90%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                margin: 0px;
+                margin-bottom: 10px;
+
+            }
+            
+
+            .image{
+
+                border-bottom-right-radius: 15px;
+                overflow: hidden;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    pointer-events: none;
+                    user-select: none;
+                }
+
+            }
+
+            a{
+                text-decoration: none;       
+                font-size: rem(14px);
+                font-family: $font_segundo;
+                margin-bottom: 15px;
+                display: block;
+                color: $color_catorce;
+    
+                span{
+                    text-transform: lowercase;
+                }
+                
+            }
+
+            .visualizacion{
+
+                display: flex;
+                column-gap: 10px;
+    
+                section{
+                    display: flex;
+                    align-items: center;
+                    column-gap: 4px;
+    
+                    img{
+                        width: rem(20px);
+                        height: auto;
+                    }
+    
+                    span{
+                        font-family: $font_ocho;
+                        font-weight: 400;
+                        font-style: normal;
+                        line-height: 20px;
+                        color: $color_trece;
+                        font-size: rem(14px);
+                    }
+    
+                }
+    
+            }
+
+        }
+
+    }
+
+    .more_blogs{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button{
+
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            text-decoration: none;
+            margin-top: 30px;
+            color: $color_diez;
+            font-family: $font_siete;
+            width: auto;
+            position: relative;
+            font-size: rem(14px);
+            border: none;
+            background-color: transparent;
+            
+
+            span{
+
+                display: flex;
+                height: 30px;
+                width: 30px;
+                position: absolute;
+                right: -35px;
+    
+                img{
+                    width: 100%;
+                    height: 100%;
+                    user-select: none;
+                    pointer-events: none;
+
+                    @include keyframes(loading){
+
+                        0%{
+                            transform: rotate(0deg);
+                        }
+
+                        11.11%{
+                            transform: rotate(40deg);
+                        }
+
+                        22.22%{
+                            transform: rotate(80deg);
+                        }
+
+                        33.33%{
+                            transform: rotate(120deg);
+                        }
+
+                        44.44%{
+                            transform: rotate(160deg);
+                        }
+
+                        55.55%{
+                            transform: rotate(200deg);
+                        }
+
+                        66.66%{
+                            transform: rotate(240deg);
+                        }
+
+                        77.77%{
+                            transform: rotate(280deg);
+                        }
+
+                        88.88%{
+                            transform: rotate(320deg);
+                        }
+
+                        100%{
+                            transform: rotate(360deg);
+                        }
+
+                    }
+
+                    @include animate(loading, 4s, steps(1, end), infinite);
+
+                }
+            }
+        }
+
+    }
+
+}

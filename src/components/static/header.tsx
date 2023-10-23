@@ -53,7 +53,6 @@ function HeaderComponent(props: Props) {
       if(currentHeader && mainElement){
         const currentHeaderHeight = currentHeader.offsetHeight;
         mainElement.style.marginTop = `${currentHeaderHeight}px`;
-        console.log(mainElement);
       }
     }
 

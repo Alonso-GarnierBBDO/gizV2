@@ -34,6 +34,10 @@
     src: url(../fonts/noir_pro/NoirPro-SemiBold.otf);
 }
 
+@font-face {
+    font-family: nunito_variable;
+    src: url(../fonts/nunito/nunito.ttf);
+}
 
 // Animation
 
@@ -84,6 +88,9 @@ $color_ocho: #FAA819;
 $color_nueve: #E11E79;
 $color_diez: #762B8F;
 $color_once: #EC1D31;
+$color_doce: #191F33;
+$color_trece: #767E94;
+$color_catorce: #32325D;
 
 
 // Variables Fonts
@@ -95,3 +102,4 @@ $font_cuarto: noir_light;
 $font_cinco: noir_medium;
 $font_seis: noir_regular;
 $font_siete: noir_semi_bold;
+$font_ocho: nunito_variable;
