@@ -1,0 +1,92 @@
+.apicultura_section{
+
+    .content_image{
+
+        padding: 0px 20px;
+        padding-top: 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+        &::after{
+            content: "";
+            width: 100%;
+            height: 30%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -2px;
+            right: 0px;
+            z-index: 0;
+            background-image: url('../../../img/punta_verde.svg');
+            background-position: right;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            top: calc(30% - 5px);
+            left: 0%;
+            width: 100%;
+            height: calc(70% + 10px);
+            background-color: $color_tercero;
+            border-top-left-radius: 50px;
+            z-index: -1;
+        }
+
+        .image{
+            width: 60vw;
+            height: 60vw;
+            overflow: hidden;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border: 3px solid white;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                user-select: none;
+                pointer-events: none;
+            }
+
+        }
+
+    }
+
+    .content_title{
+
+        background-color: $color_tercero;
+        padding: 30px 20px;
+
+        h2{
+            text-align: center;
+            font-family: $font_primero;
+            font-size: rem(30px);
+            color: $color_segundo;
+            letter-spacing: 4px;
+            margin: 0px;
+        }
+
+        p{
+            text-align: center;
+            font-size: rem(14px);
+            font-family: $font_cuarto;
+            color: $color_segundo;
+            margin: 0px;
+            margin-bottom: 15px;
+
+            &:last-of-type{
+                margin-bottom: 0px;
+            }
+        }
+    
+        strong{
+            font-family: $font_siete;
+        }
+
+
+    }
+
+}
