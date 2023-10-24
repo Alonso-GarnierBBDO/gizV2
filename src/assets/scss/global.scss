@@ -1,5 +1,6 @@
 @import './variable';
 @import './components/header';
+@import './components/footer';
 @import './components/home/banner';
 @import './components/home/about';
 @import './components/home/que_buscamos';
@@ -10,3 +11,7 @@
 @import './components/home/preguntas_frescuentes';
 @import './components/home/entrevistas';
 @import './components/home/contacto';
+
+body{
+    overflow-x: hidden;
+}

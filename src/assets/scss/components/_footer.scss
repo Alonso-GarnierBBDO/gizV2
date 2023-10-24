@@ -1,0 +1,103 @@
+footer{
+
+    position: relative;
+    padding: 30px 20px;
+    padding-top: 60px;
+    padding-bottom: 0px;
+    
+    &::after{
+
+        content: "";
+        position: absolute;
+        top: -80px;
+        right: -2px;
+        width: 100%;
+        height: 100px;
+        background-image: url(../../img/footer.svg);
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+        z-index: -1;
+
+    }
+
+    &::before{
+        content: "";
+        top: 19px;
+        left: 0px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $color_siete;
+        border-top-left-radius: 50px;
+        z-index: -1;
+    }
+
+    .image{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+        user-select: none;
+        pointer-events: none;
+
+        img{
+            width: 50%;
+            height: auto;
+        }
+
+    }
+    
+    .red_social{
+
+        p{
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: rem(15px);
+            font-family: $font_cinco;
+            color: $color-segundo;
+        }
+
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+            margin-bottom: 30px;
+
+            img{
+                height: 25px;
+                width: auto;
+            }
+
+            hr{
+                width: 1px;
+                margin: 0px;
+                height: 25px;
+                border: none;
+                background-color: $color_segundo;
+            }
+        }
+
+    }
+
+    hr{
+        width: 100%;
+        border: none;
+        height: 2px;
+        background-color: $color_segundo;
+    }
+
+    .aditional{
+
+        text-align: center;
+
+        p{
+            font-family: $font_cuarto;
+            color: $color-segundo;
+            font-size: rem(14px);
+        }
+    }
+
+}
