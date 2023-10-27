@@ -13,10 +13,16 @@ header{
 
 }
 
+.MuiButtonBase-root{
+    border-bottom: 1px solid $color_border_menu;
+}
+
 .menu_item{
+
     span{
-        font-family: $font_primero;
-        font-size: rem(30px);
+        font-family: $font_nueve;
+        font-size: rem(15px);
         color: $color_principal;
+        text-transform: uppercase;
     }
 }

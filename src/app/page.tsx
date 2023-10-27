@@ -8,6 +8,7 @@ import MapaComponent from "@/components/pages/home/mapa";
 import NoticiasComponent from "@/components/pages/home/noticias";
 import PreguntasFrecuentesComponent from "@/components/pages/home/preguntas_frecuentes";
 import QueBuscamosComponent from "@/components/pages/home/que_buscamos";
+import SoyApilcultorComponent from "@/components/pages/home/soy_apicultor";
 
 
 function Home(){
@@ -21,6 +22,7 @@ function Home(){
         <ConstribuirComponent/>
         <ApiculturaComponent/>
         <MapaComponent/>
+        <SoyApilcultorComponent/>
         <NoticiasComponent/>
         <PreguntasFrecuentesComponent/>
         <EntrevistasComponent/>

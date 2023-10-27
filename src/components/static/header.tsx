@@ -35,7 +35,7 @@ interface Props {
 function HeaderComponent(props: Props) {
 
   const drawerWidth = 240;
-  const navItems = ["Home", "About", "Contact"];
+  const navItems = ["Home", "QUIÉNES SOMOS", "APICULTURA EN CR", "SOY APICULTOR", "NOTICIAS / FAQS",  "SEAMOS VOZ PARA LAS ABEJAS", "CONTACTO"];
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);

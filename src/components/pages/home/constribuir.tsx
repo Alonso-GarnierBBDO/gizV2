@@ -106,12 +106,12 @@ function ConstribuirComponent(){
                     <p>Por ello, toda la población en general es beneficiada con este proyecto, y todos podemos contribuir.</p>
                     <p>Las siguientes agencias de gobierno y entidades participaron como colaboradores en el proyecto:</p>
                 </section>
-                <section className="images">
+                {/* <section className="images">
                     <Image src={SenasaImage.src} alt="Imagen de Senasa" width={200} height={200}/>
                     <Image src={AgriculturaImage.src} alt="Imagen de agricultura" width={200} height={200}/>
                     <Image src={DosPinosImage.src} alt="Imagen de dos pinos" width={200} height={200}/>
                     <Image src={UNAImage.src} alt="Imagen de la UNA" width={200} height={200}/>
-                </section>
+                </section> */}
             </section>
         </>
     )

@@ -31,10 +31,10 @@ function BannerComponent(){
                 </section>
                 <section className="content_absolute">
                     <p>Significa que las abejas y su vuelo garantizan la seguridad alimentaria de la población mundial.</p>
-                    <section className="group">
+                    {/* <section className="group">
                         <a href="">Únete</a>
                         <a href="">Soy apicultor</a>
-                    </section>
+                    </section> */}
                 </section>
             </section>
         </>

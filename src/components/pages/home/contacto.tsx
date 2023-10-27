@@ -24,7 +24,8 @@ function ContactoFormComponent(){
     return(
         <>
             <section className="contacto_seccion">
-                <h2>Contacto</h2>
+                <section className='box'>
+                    <h2>Contacto</h2>
                     <Box className='form_item'>
                         <section>
                             <label htmlFor="nombre">Nombre completo</label>
@@ -55,6 +56,7 @@ function ContactoFormComponent(){
                         </section>
                         <button>Enviar</button>
                     </Box>
+                </section>               
             </section>
         </>
     )

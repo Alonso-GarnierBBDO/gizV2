@@ -39,6 +39,12 @@
     src: url(../fonts/nunito/nunito.ttf);
 }
 
+
+@font-face {
+    font-family: roboto_regular;
+    src: url(../fonts/roboto/roboto-regular.ttf);
+}
+
 // Animation
 
 @mixin keyframes($name){
@@ -98,7 +104,11 @@ $color_entrevistas: #020202;
 $color_abeja_colores: #152786;
 $color_form: #E0DBDB;
 $color_form_focused: rgb(150, 150, 150);
-
+$color_border_menu: #E1E2E3;
+$color_box_noticias_one: #E9EAF0;
+$color_box_noticias_two: #FFFFFF;
+$color_bottom_noticias: #F6F4F4;
+$color_input: #FAFAFA;
 
 // Variables Fonts
 
@@ -110,3 +120,4 @@ $font_cinco: noir_medium;
 $font_seis: noir_regular;
 $font_siete: noir_semi_bold;
 $font_ocho: nunito_variable;
+$font_nueve: roboto_regular;

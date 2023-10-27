@@ -26,10 +26,23 @@
 
     .accordeon{
 
+        border: 1px solid $color_box_noticias_one;
+        padding: 10px 25px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+
+        .MuiButtonBase-root{
+            border: none;
+        }
+
+
         .item-acordeon{
 
-            margin: 25px 0px;
+            margin: 15px 0px;
             box-shadow: none !important;
+            border-bottom: 1px solid $color_box_noticias_one;
+            padding-bottom: 15px;
 
             div{
                 padding: 0px;

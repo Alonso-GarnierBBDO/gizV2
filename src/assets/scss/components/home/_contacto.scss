@@ -19,12 +19,23 @@
         transform: rotateX(180deg) rotateY(180deg);
     }
 
+    .box{
+        width: 95%;
+        background-color: $color_segundo;
+        margin-top: 20px;
+        margin: auto;
+        padding: 20px 20px;
+        border-radius: 20px;
+        border: 1px solid $color_box_noticias_one;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    }
+
     h2{
         text-align: center;
-        margin-top: 20px;
+        margin-top: 0px;
         margin-bottom: 20px;
         font-size: rem(30px);
-        font-family: $font_primero;
+        font-family: $font_segundo;
         color: $color_cinco;
         line-height: 34px;
 
@@ -56,10 +67,11 @@
                 border-radius: 10px;
                 font-size: rem(13px);
                 font-family: $font_cuarto;   
+                background-color: $color_input;
             }
 
             .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
-                border: 2px solid $color_form;
+                border: 1px solid $color_form;
                 transition: .2s ease;
                 padding: 0px;
                 box-shadow: none;
