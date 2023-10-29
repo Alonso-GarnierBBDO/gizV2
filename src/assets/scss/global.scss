@@ -14,6 +14,10 @@
 @import './components/home/soy_apicultor';
 
 body{
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100vw;
+}
+
+html{
+    overflow-x: clip;
 }

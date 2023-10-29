@@ -1,4 +1,21 @@
 .constribuir_section {
+
+  background-color: $color_segundo;
+
+  .mobile{
+    display: block;
+    @include bp(tabletMD){
+      display: none;
+    }
+  }
+
+  .escritorio{
+    display: none;
+    @include bp(tabletMD){
+      display: block;
+    }
+  }
+
   .header {
     display: flex;
     align-items: center;
@@ -10,6 +27,17 @@
       align-items: center;
       position: relative;
       margin-bottom: 20px;
+      z-index: 1;
+
+      @include bp(tabletMD){
+        width: 80%;
+        margin-bottom: 40px;
+      }
+
+      @include bp(laptop){
+        width: 60%;
+        margin-bottom: 40px;
+      }
 
       .image {
         background-color: $color_siete;
@@ -25,8 +53,16 @@
         pointer-events: none;
         user-select: none;
 
+        @include bp(tabletMD){
+          max-height: 150px;
+          max-width: 150px;
+        }
+        @include bp(laptop){
+          left: -3.5vw;
+        }
+
         img {
-          width: 80%;
+          width: 60%;
           height: auto;
           object-fit: cover;
         }
@@ -43,6 +79,13 @@
         display: flex;
         justify-content: center;
 
+
+        @include bp(tabletMD){
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+
+
         h2 {
           color: $color_segundo;
           font-family: $font_segundo;
@@ -50,6 +93,11 @@
           width: calc(100% - 10px);
           text-overflow: ellipsis;
           overflow: hidden;
+
+          @include bp(tabletMD){
+            font-size: rem(35px);
+          }
+
         }
       }
     }
@@ -59,14 +107,38 @@
     }
   }
 
+  .content_sections{
+
+    @include bp(tabletMD){
+      grid-area: 2 / 1 / span 2;
+      z-index: 1;
+    }
+
+  }
+
   .content {
     padding: 0px 20px;
     padding-bottom: 30px;
+
+    @include bp(tabletMD){
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      padding: 0px 100px;
+      align-items: center;
+    }
 
     p {
       font-size: rem(14px);
       font-family: $font_cuarto;
       text-align: center;
+
+      @include bp(tabletMD){
+        margin-bottom: 0px;
+      }
+
+      @include bp(laptop){
+        font-size: rem(20px);
+      }
 
       strong {
         font-family: $font_siete;
@@ -79,12 +151,45 @@
       grid-template-rows: repeat(4, 1fr);
       grid-gap: 10px;
 
+      @include bp(tabletMD){
+        grid-template-columns: repeat(4, calc(25% - 7.5px));
+        grid-template-rows: repeat(4, calc(25% - 7.5px));
+        grid-area: 1 / 2 / span 4;
+        width: calc(50vw - 100px);
+        height: calc(50vw - 100px);
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        z-index: 1;
+
+      }
+
+      @include bp(laptop){
+        width: calc(45vw - 100px);
+        height: calc(45vw - 100px);
+        margin: auto;
+      }
+
+
+      @include bp(tablet){
+        grid-template-rows: initial;
+      }
+
       div {
         width: 100%;
         height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        .text{
+
+          p{
+            margin-top: 0px;
+
+          }
+
+        }
 
         &:nth-of-type(1) {
           grid-area: 1 / 2 / 1 / span 2;
@@ -93,7 +198,26 @@
           align-items: center;
           transform: translateY(25%);
 
+          @include bp(tabletMD){
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            transform: translateY(12%);
+          }
+
+          @include bp(laptop){
+            width: 130px;
+            height: 130px;
+          }
+
           .content_hexagono {
+
+            @include bp(tabletMD){
+              width: 100%;
+              height: 100%;
+              
+            }  
+
             svg {
               path {
                 fill: $color_siete;
@@ -104,6 +228,12 @@
               p {
                 font-size: rem(10px);
                 color: $color_siete;
+
+                @include bp(laptop){
+                  font-size: rem(14px);
+                  line-height: 15px;
+                }
+
               }
             }
           }
@@ -113,7 +243,24 @@
           grid-area: 2;
           transform: translate(12%, -16%);
 
+          @include bp(tabletMD){
+            width: 80px;
+            height: 80px;
+            transform: translate(25%, -25%);
+          }
+
+          @include bp(laptop){
+            width: 130px;
+            height: 130px;
+          }
+
           .content_hexagono {
+
+            @include bp(tabletMD){
+              width: 100%;
+              height: 100%;
+            }
+
             svg {
               path {
                 fill: $color_nueve;
@@ -124,6 +271,10 @@
               p {
                 font-size: rem(10px);
                 color: $color_nueve;
+                @include bp(laptop){
+                  font-size: rem(14px);
+                  line-height: 15px;
+                }
               }
             }
           }
@@ -133,7 +284,24 @@
           grid-area: 2 / 4;
           transform: translate(-12%, -16%);
 
+          @include bp(tabletMD){
+            width: 80px;
+            height: 80px;
+            transform: translate(-25%, -25%);
+          }
+
+          @include bp(laptop){
+            width: 130px;
+            height: 130px;
+          }
+
           .content_hexagono {
+
+            @include bp(tabletMD){
+              width: 100%;
+              height: 100%;
+            }
+
             svg {
               path {
                 fill: $color_cinco;
@@ -144,6 +312,10 @@
               p {
                 font-size: rem(10px);
                 color: $color_cinco;
+                @include bp(laptop){
+                  font-size: rem(14px);
+                  line-height: 15px;
+                }
               }
             }
           }
@@ -153,7 +325,24 @@
           grid-area: 3;
           transform: translate(12%, 14%);
 
+          @include bp(tabletMD){
+            width: 80px;
+            height: 80px;
+            transform: translate(25%, 25%);
+          }
+
+          @include bp(laptop){
+            width: 130px;
+            height: 130px;
+          }
+
           .content_hexagono {
+
+            @include bp(tabletMD){
+              width: 100%;
+              height: 100%;
+            }
+
             svg {
               path {
                 fill: $color_diez;
@@ -164,6 +353,10 @@
               p {
                 font-size: rem(10px);
                 color: $color_diez;
+                @include bp(laptop){
+                  font-size: rem(14px);
+                  line-height: 15px;
+                }
               }
             }
           }
@@ -173,7 +366,24 @@
           grid-area: 3 / 4;
           transform: translate(-12%, 14%);
 
+          @include bp(tabletMD){
+            width: 80px;
+            height: 80px;
+            transform: translate(-25%, 25%);
+          }
+
+          @include bp(laptop){
+            width: 130px;
+            height: 130px;
+          }
+
           .content_hexagono {
+
+            @include bp(tabletMD){
+              width: 100%;
+              height: 100%;
+            }
+
             svg {
               path {
                 fill: $color_once;
@@ -184,6 +394,12 @@
               p {
                 font-size: rem(10px);
                 color: $color_once;
+
+                @include bp(laptop){
+                  font-size: rem(14px);
+                  line-height: 15px;
+                }
+
               }
             }
           }
@@ -196,7 +412,24 @@
           align-items: center;
           transform: translateY(-29%);
 
+          @include bp(tabletMD){
+            width: 80px;
+            height: 80px;
+            margin: auto;
+            transform: translateY(-17%);
+          }
+
+          @include bp(laptop){
+            width: 130px;
+            height: 130px;
+          }
+
           .content_hexagono {
+
+            @include bp(tabletMD){
+              height: 100%;
+            }
+
             svg {
               path {
                 fill: $color_tercero;
@@ -207,6 +440,11 @@
               p {
                 font-size: rem(10px);
                 color: $color_tercero;
+
+                @include bp(laptop){
+                  font-size: rem(14px);
+                  line-height: 15px;
+                }
               }
             }
           }
@@ -215,11 +453,27 @@
         &:nth-of-type(7) {
           grid-area: 2 / span 2 / span 2;
 
+          @include bp(laptop){
+            width: 200px;
+            height: 200px;
+          }
+
           .content_hexagono {
             width: 35vw;
             height: 35vw;
 
+            @include bp(tabletMD){
+              height: 70%;
+              width: 70%;
+            }
+
+            @include bp(laptop){
+              width: 100%;
+              height: 100%;
+            }
+
             svg {
+
               path {
                 fill: $color_ocho;
               }
@@ -229,6 +483,12 @@
               p {
                 font-size: rem(16px);
                 color: $color_ocho;
+
+                @include bp(tabletMD){
+                  font-size: rem(25px);
+                  margin-bottom: 0px;
+                }
+
               }
             }
           }
@@ -239,15 +499,30 @@
           height: 25vw;
           position: relative;
 
+          @include bp(tabletMD){
+            height: auto;
+          }
+
+
+
           .hexagono {
             position: absolute;
             width: 100%;
             height: 100%;
 
+            @include bp(tabletMD){
+              height: 100%;
+            }
+
             svg {
               width: 100%;
               height: 100%;
               transform: scale(1.4) translateY(4px);
+
+              @include bp(tabletMD){
+                height: 100%;
+              }
+
             }
           }
 
@@ -271,10 +546,20 @@
             height: 100%;
             margin: auto;
 
+            @include bp(tabletMD){
+              height: 100%;
+              width: 50%;
+            }
+
             p {
               font-size: rem(13px);
               font-family: $font_segundo;
               line-height: 10px;
+
+              @include bp(tabletMD){
+                font-size: rem(14px);
+              }
+
             }
           }
         }

@@ -10,18 +10,14 @@
     padding: 0px 20px;
     position: relative;
 
-    // &::after{
-    //     content: "";
-    //     width: 100%;
-    //     height: 10%;
-    //     background-color: $color_segundo;
-    //     position: absolute;
-    //     bottom: -0px;
-    //     right: 0px;
-    //     z-index: 0;
-    //     border-bottom-left-radius: 130px;
-    //     // box-shadow: 0px -65px 27px 63px rgb(255 255 255);
-    // }
+    @include bp(tabletMD){
+        background-position: 20%;
+        padding: 0px 100px;
+    }
+
+    @include bp(laptop){
+        background-position: 0%;
+    }
 
     &::before{
         content: "";
@@ -35,6 +31,11 @@
         left: 0px;
         z-index: 0;
         background-image: url('../../../img/punta.svg');
+
+        @include bp(tabletMD){
+            height: 20%;
+        }
+
     }
 
     .circle{
@@ -51,6 +52,18 @@
         border: 1px dashed $color_segundo;
         z-index: 1;
 
+        @include bp(tabletMD){
+            width: 40vw;
+            height: 40vw;
+            max-width: 400px;
+            max-height: 400px;
+            border: 6px dashed $color_segundo;
+            transform: translateX(0%) translateY(0%);
+        }
+
+        @include bp(laptop){
+            transform: translateX(20%) translateY(-20%);
+        }
 
         h1{
             font-size: rem(35px);
@@ -60,6 +73,13 @@
             color: $color_segundo;
             font-family: $font_primero;
             letter-spacing: 4px;
+
+            @include bp(tabletMD){
+                font-size: rem(64px);
+                letter-spacing: 0px;
+                line-height: 60px;
+            }
+
         }
     }
 
@@ -76,6 +96,19 @@
             color: $color_cuarto;
             margin-bottom: 20px;
             font-size: rem(14px);
+
+            @include bp(tabletMD){
+                text-align: left;
+                font-size: rem(18px);
+                max-width: 50%;
+                line-height: initial;
+            }
+
+            @include bp(laptop){
+                font-size: rem(25px);
+                max-width: 40%;
+            }
+
         }
 
         .group{

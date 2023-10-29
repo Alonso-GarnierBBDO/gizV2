@@ -22,7 +22,14 @@ function ConstribuirComponent(){
                     </section>
                 </section>
                 <section className="content">
-                    <p>El Movimiento Polinizando Costa Rica es el resultado de alianzas públicas y privadas, nacionales e internacionales: IS Corporación, Corona Dorada y la Agencia de Cooperación Alemana para el Desarrollo (GIZ).</p>
+                    <section className="content_sections">
+                        <p>El Movimiento Polinizando Costa Rica es el resultado de alianzas públicas y privadas, nacionales e internacionales: IS Corporación, Corona Dorada y la Agencia de Cooperación Alemana para el Desarrollo (GIZ).</p>
+                        <div className="escritorio">
+                            <p>Las acciones de este Movimiento <strong> traen beneficios directos al sector apícola y consumidores de miel, pero también impactan los Objetivos de Desarrollo Sostenible de Naciones Unidas,</strong> en áreas como crecimiento económico sostenible e inclusivo y prosperidad de la biodiversidad.</p>
+                            <p>Por ello, toda la población en general es beneficiada con este proyecto, y todos podemos contribuir.</p>
+                            <p>Las siguientes agencias de gobierno y entidades participaron como colaboradores en el proyecto:</p>
+                        </div>
+                    </section>
                     <section className="exagono">
                         <div>
                             <section className="content_hexagono">
@@ -102,9 +109,11 @@ function ConstribuirComponent(){
                             </section>
                         </div>
                     </section>
-                    <p>Las acciones de este Movimiento <strong> traen beneficios directos al sector apícola y consumidores de miel, pero también impactan los Objetivos de Desarrollo Sostenible de Naciones Unidas,</strong> en áreas como crecimiento económico sostenible e inclusivo y prosperidad de la biodiversidad.</p>
-                    <p>Por ello, toda la población en general es beneficiada con este proyecto, y todos podemos contribuir.</p>
-                    <p>Las siguientes agencias de gobierno y entidades participaron como colaboradores en el proyecto:</p>
+                    <div className="mobile">
+                        <p>Las acciones de este Movimiento <strong> traen beneficios directos al sector apícola y consumidores de miel, pero también impactan los Objetivos de Desarrollo Sostenible de Naciones Unidas,</strong> en áreas como crecimiento económico sostenible e inclusivo y prosperidad de la biodiversidad.</p>
+                        <p>Por ello, toda la población en general es beneficiada con este proyecto, y todos podemos contribuir.</p>
+                        <p>Las siguientes agencias de gobierno y entidades participaron como colaboradores en el proyecto:</p>
+                    </div>
                 </section>
                 {/* <section className="images">
                     <Image src={SenasaImage.src} alt="Imagen de Senasa" width={200} height={200}/>

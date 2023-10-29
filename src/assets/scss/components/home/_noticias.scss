@@ -2,6 +2,12 @@
 
     padding: 30px 20px;
 
+    @include bp(tabletMD){
+        padding: 30px 100px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
     .image_abeja{
 
         display: flex;
@@ -10,6 +16,11 @@
         img{
             width: rem(45.998px);
             height: auto;
+
+            @include bp(tabletMD){
+                width: rem(120px);
+            }
+
         }
 
     }
@@ -22,6 +33,17 @@
         letter-spacing: 4px;
         margin-top: 30px;
         margin-bottom: 20px;
+
+        @include bp(tabletMD){
+            font-size: rem(27px);
+            text-align: center;
+            margin-top: 90px;
+        }
+
+        @include bp(laptop){
+            font-size: rem(40px);
+        }
+
     }
 
     .noticia_destacada{
@@ -33,6 +55,11 @@
         overflow: hidden;
         border: 1px solid $color_box_noticias_one;
 
+        @include bp(tabletMD){
+            border-top-right-radius: 80px;
+            border-bottom-left-radius: 80px;
+        }
+
         .image{
 
             width: 100%;
@@ -40,6 +67,12 @@
             border-top-right-radius: 30px;
             border-bottom-left-radius: 30px;
             overflow: hidden;
+
+            @include bp(tabletMD){
+                height: 450px;
+                border-top-right-radius: 80px;
+                border-bottom-left-radius: 80px;
+            }
 
             img{
                 width: 100%;
@@ -57,6 +90,11 @@
             place-items: center;
             padding: 0px 20px;
 
+            @include bp(tabletMD){
+                padding: 0px 50px;
+                margin: auto;
+            }
+
             h3{
 
                 font-size: rem(16px);
@@ -65,6 +103,15 @@
                 font-family: $font_cinco;
                 width: 80%;
                 margin: 15px 0px;
+
+                @include bp(tabletMD){
+                    font-size: rem(27px);
+                }
+        
+                @include bp(laptop){
+                    font-size: rem(30px);
+                }
+
 
             }
 
@@ -77,6 +124,17 @@
                 font-style: normal;
                 line-height: 20px;
                 margin-bottom: 15px;
+
+                @include bp(tabletMD){
+                    font-size: rem(15px);
+                    text-align: left;
+                    width: 100%;
+                }
+        
+                @include bp(laptop){
+                    font-size: rem(20px);
+                }
+
             }
 
         }
@@ -90,6 +148,15 @@
             color: $color_catorce;
             padding: 0px 20px;
 
+            @include bp(tabletMD){
+                padding: 0px 50px;
+                font-size: rem(15px);
+            }
+
+            @include bp(laptop){
+                font-size: rem(20px);
+            }
+
             span{
                 text-transform: lowercase;
             }
@@ -102,6 +169,11 @@
             column-gap: 10px;
             padding: 0px 20px 20px 20px;
 
+            @include bp(tabletMD){
+                padding: 0px 50px 20px 50px;
+                margin: auto;
+            }
+
             section{
                 display: flex;
                 align-items: center;
@@ -110,6 +182,15 @@
                 img{
                     width: rem(20px);
                     height: auto;
+
+                    @include bp(tabletMD){
+                        width: rem(25px);
+                    }
+        
+                    @include bp(laptop){
+                        width: rem(25px);
+                    }
+
                 }
                 
                 span{
@@ -119,6 +200,15 @@
                     line-height: 20px;
                     color: $color_trece;
                     font-size: rem(14px);
+
+                    @include bp(tabletMD){
+                        font-size: rem(15px);
+                    }
+        
+                    @include bp(laptop){
+                        font-size: rem(20px);
+                    }
+
                 }
 
             }
@@ -140,6 +230,18 @@
             border-top-left-radius: 15px;
             border-bottom-right-radius: 15px;
             padding: 0px 0px 0px 20px;
+
+            @include bp(tabletMD){
+                grid-template-columns: 85% 15%;
+                align-items: center;
+                border-top-left-radius: 30px;
+                border-bottom-right-radius: 30px;
+                overflow: hidden;
+            }
+
+            // @include bp(laptop){
+            //     grid-template-columns: 70% 30%;
+            // }
 
             &:last-of-type{
                 margin-bottom: 0px;
@@ -163,6 +265,14 @@
                 margin: 0px;
                 margin-bottom: 10px;
 
+                @include bp(tabletMD){
+                    font-size: rem(25px);
+                }
+        
+                @include bp(laptop){
+                    font-size: rem(27px);
+                }
+
             }
             
 
@@ -170,6 +280,10 @@
 
                 border-bottom-right-radius: 15px;
                 overflow: hidden;
+
+                @include bp(tabletMD){
+                    height: 100%;
+                }
 
                 img{
                     width: 100%;
@@ -188,6 +302,14 @@
                 margin-bottom: 15px;
                 display: block;
                 color: $color_catorce;
+
+                @include bp(tabletMD){
+                    font-size: rem(14px);
+                }
+    
+                @include bp(laptop){
+                    font-size: rem(18px);
+                }
     
                 span{
                     text-transform: lowercase;
@@ -208,6 +330,15 @@
                     img{
                         width: rem(20px);
                         height: auto;
+
+                        @include bp(tabletMD){
+                            width: rem(22px);
+                        }
+            
+                        @include bp(laptop){
+                            width: rem(22px);
+                        }
+
                     }
     
                     span{
@@ -217,6 +348,15 @@
                         line-height: 20px;
                         color: $color_trece;
                         font-size: rem(14px);
+
+                        @include bp(tabletMD){
+                            font-size: rem(14px);
+                        }
+            
+                        @include bp(laptop){
+                            font-size: rem(18px);
+                        }
+
                     }
     
                 }
@@ -250,6 +390,16 @@
             justify-content: center;
             padding: 15px 0px;
             border-radius: 30px;
+            cursor: pointer;
+
+            @include bp(tabletMD){
+                font-size: rem(14px);
+            }
+
+            @include bp(laptop){
+                font-size: rem(18px);
+                width: 300px;
+            }
             
 
             span{

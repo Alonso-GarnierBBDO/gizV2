@@ -10,7 +10,6 @@ import {
   AppBar,
   Box,
   CssBaseline,
-  Divider,
   Drawer,
   IconButton,
   List,
@@ -18,7 +17,6 @@ import {
   ListItemButton,
   ListItemText,
   Toolbar,
-  Button,
 } from "@mui/material";
 
 import { useState, useEffect, useRef, Ref, MutableRefObject } from "react";
@@ -27,10 +25,13 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import Image from "next/image";
 import Logo from "@/assets/img/Logo.svg";
+import LogoNormal from "@/assets/img/mariposa_sin_texto.svg";
+import Link from "next/link";
 
 interface Props {
   window?: () => Window;
 }
+
 
 function HeaderComponent(props: Props) {
 
@@ -78,25 +79,43 @@ function HeaderComponent(props: Props) {
       <header>
         <CssBaseline />
         <AppBar component="nav" sx={{ backgroundColor: "white" }} ref={headerElement}>
-          <Toolbar sx={{ justifyContent: "space-between", padding: '10px 20px' }}>
-            <Image src={Logo.src} alt="Logo" width={100} height={100} />
+          <Toolbar 
+            sx={{ justifyContent: {
+              xs: "space-between",
+              md: "center"
+            }, 
+            padding: '10px 20px',
+            gridGap: {
+              md: "15px",
+              lg: "30px"
+            }
+          }}
+          >
+
+            <Link className="link_escritorio" href="#"> Home </Link>
+            <Link className="link_escritorio" href="#">QUIÉNES SOMOS</Link>
+            <Link className="link_escritorio" href="#" >APICULTURA EN CR</Link>
+            <Link className="link_escritorio" href="#">SOY APICULTOR</Link>
+
+            <Image className="link_mobile" src={Logo.src} alt="Logo" width={100} height={100} />
+            <Image className="link_escritorio" src={LogoNormal.src} alt="Logo" width={100} height={100} />
+
+            <Link className="link_escritorio" href="#">NOTICIAS / FAQS</Link>
+            <Link className="link_escritorio" href="#">SEAMOS VOZ PARA LAS ABEJAS</Link>
+            <Link className="link_escritorio" href="#">CONTACTO</Link>
+
+
             <IconButton
               color="inherit"
               className={"icon_menu"}
               aria-label="open drawer"
               edge="end"
               onClick={handleDrawerToggle}
-              sx={{ display: { sm: "none" } }}
+              sx={{ display: { md: "none" } }}
             >
               <MenuIcon />
             </IconButton>
-            <Box sx={{ display: { xs: "none", sm: "block" } }}>
-              {navItems.map((item) => (
-                <Button key={item} sx={{ color: "#fff" }}>
-                  {item}
-                </Button>
-              ))}
-            </Box>
+            
           </Toolbar>
         </AppBar>
         <nav>
@@ -109,7 +128,7 @@ function HeaderComponent(props: Props) {
               keepMounted: true, // Better open performance on mobile.
             }}
             sx={{
-              display: { xs: "flex", sm: "none" },
+              display: { xs: "flex", lg: "none" },
               "& .MuiDrawer-paper": {
                 boxSizing: "border-box",
                 width: drawerWidth,

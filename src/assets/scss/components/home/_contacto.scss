@@ -28,6 +28,15 @@
         border-radius: 20px;
         border: 1px solid $color_box_noticias_one;
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+
+        @include bp(tabletMD){
+            max-width: 1200px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding: 40px 20px;
+        }
+
     }
 
     h2{
@@ -38,6 +47,14 @@
         font-family: $font_segundo;
         color: $color_cinco;
         line-height: 34px;
+
+        @include bp(tabletMD){
+            font-size: rem(27px);
+        }
+
+        @include bp(laptop){
+            font-size: rem(40px);
+        }
 
     }
 
@@ -55,11 +72,28 @@
                 color: $color_entrevistas;
                 font-size: rem(13px);
                 font-family: $font_siete;
+
+                @include bp(tabletMD){
+                    font-size: rem(15px);
+                }
+        
+                @include bp(laptop){
+                    font-size: rem(20px);
+                }
+
             }
 
             input{
                 font-size: rem(13px);
                 font-family: $font_cuarto;   
+
+                @include bp(tabletMD){
+                    font-size: rem(15px);
+                }
+        
+                @include bp(laptop){
+                    font-size: rem(20px);
+                }
             }
 
             div{
@@ -68,6 +102,15 @@
                 font-size: rem(13px);
                 font-family: $font_cuarto;   
                 background-color: $color_input;
+
+                @include bp(tabletMD){
+                    font-size: rem(15px);
+                }
+        
+                @include bp(laptop){
+                    font-size: rem(20px);
+                }
+
             }
 
             .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
@@ -96,6 +139,18 @@
             border: none;
             border-radius: 25px;
             color: $color_segundo;
+            cursor: pointer;
+
+            @include bp(tabletMD){
+                font-size: rem(15px);
+                width: 300px;
+                margin-top: 25px;
+            }
+    
+            @include bp(laptop){
+                font-size: rem(20px);
+            }
+
         }
 
     }

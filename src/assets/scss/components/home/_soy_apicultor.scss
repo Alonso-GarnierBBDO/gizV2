@@ -1,6 +1,10 @@
 .soy_apicultor_component{
     padding: 30px 20px 0px 20px;
 
+    @include bp(tabletMD){
+        padding: 0px 100px;
+    }
+
     .image_abeja{
 
         display: flex;
@@ -9,6 +13,11 @@
         img{
             width: rem(45.998px);
             height: auto;
+
+            @include bp(tabletMD){
+                width: rem(120px);
+            }
+
         }
 
     }
@@ -21,6 +30,17 @@
         letter-spacing: 4px;
         margin-top: 30px;
         margin-bottom: 20px;
+
+        @include bp(tabletMD){
+            font-size: rem(27px);
+            text-align: left;
+            margin-top: 0px;
+        }
+
+        @include bp(laptop){
+            font-size: rem(40px);
+        }
+
     }
 
     .content{
@@ -29,12 +49,32 @@
         flex-flow: column;
         align-items: center;
 
+        @include bp(tabletMD){
+            display: grid;
+            grid-template-columns: repeat(2, calc(50% - 30px));
+            margin-top: 100px;
+            grid-gap: 60px;
+        }
+
+
         p{
             color: $color_cuarto;
             font-family: $font_cuarto;
             font-size: rem(14px);
             text-align: center;
             margin-bottom: 0px;
+
+            @include bp(tabletMD){
+                font-size: rem(15px);
+                text-align: left;
+                margin-bottom:30px;
+            }
+    
+            @include bp(laptop){
+                font-size: rem(20px);
+            }
+
+
         }
     
         .descarga{
@@ -51,6 +91,15 @@
             font-family: $font_siete;
             margin: 20px 0px;
 
+            @include bp(tabletMD){
+                width: 250px;
+
+                // Esto es porque escritorio no lo tiene
+
+                display: none;
+
+            }
+
             img{
                 height: auto;
                 width: rem(20px);
@@ -62,6 +111,17 @@
             margin: 0px;
             font-family: $font_segundo;
             font-size: rem(15px);
+
+            @include bp(tabletMD){
+                font-size: rem(15px);
+                text-align: center;
+            }
+    
+            @include bp(laptop){
+                font-size: rem(20px);
+            }
+
+
         }
 
 
@@ -74,10 +134,20 @@
             margin-top: 20px;
             column-gap: 20px;
 
+            @include bp(tabletMD){
+                flex-flow: column;
+            }
+
+
             a{
 
                 width: 100%;
                 display: flex;
+
+                @include bp(tabletMD){
+                    width: 300px;
+                    margin-bottom: 25px;
+                }
             
                 img{
                     width: 100%;
@@ -92,6 +162,10 @@
             display: flex;
             justify-content: center;
             margin-top: 20px;
+
+            @include bp(tabletMD){
+                display: none;
+            }
 
             a{
                 background-color: red;

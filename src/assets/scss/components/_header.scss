@@ -3,11 +3,60 @@ header{
     img{
         height: 100%;
         width: auto;
+
+        @include bp(tabletMD){
+            height: auto;
+            width: 60px;
+            margin: 0px 15px;
+            pointer-events: none;
+            user-select: none;
+        }
     }
 
     .icon_menu{
         svg{
             fill: $color_principal;
+        }
+    }
+
+    a.link_escritorio{
+        display: none;
+        color: $color_menu_escritorio;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: rem(10px);
+        border-radius: 10px;
+        transition: .2s ease;
+        transform: scale(1);
+
+        &:hover{
+            text-decoration: underline;
+        }
+
+        &:active{
+            transform: scale(0.93);
+        }
+
+        @include bp(tabletMD){
+            display: block;
+        }
+
+        @include bp(laptop){
+            font-size: rem(13px);
+        }
+
+    }
+
+    img.link_escritorio{
+        display: none;
+        @include bp(tabletMD){
+            display: block;
+        }
+    }
+
+    .link_mobile{
+        @include bp(tabletMD){
+            display: none;
         }
     }
 

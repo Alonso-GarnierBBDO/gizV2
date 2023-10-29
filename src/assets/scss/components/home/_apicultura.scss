@@ -1,5 +1,13 @@
 .apicultura_section{
 
+    @include bp(tabletMD){
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        padding: 0px 100px;
+        position: relative;
+        padding-top: 100px;
+    }
+
     .content_image{
 
         padding: 0px 20px;
@@ -7,6 +15,15 @@
         position: relative;
         display: flex;
         justify-content: center;
+        
+        @include bp(tabletMD){
+            grid-area:  1 / 2;
+            position: initial;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
 
         &::after{
             content: "";
@@ -20,6 +37,13 @@
             z-index: 0;
             background-image: url('../../../img/punta_verde.svg');
             background-position: right;
+
+            @include bp(tabletMD){
+                z-index: 0;
+                top: calc(-30% + 100px);
+                background-color: $color_segundo;
+            }
+
         }
 
         &::before{
@@ -32,6 +56,14 @@
             background-color: $color_tercero;
             border-top-left-radius: 50px;
             z-index: -1;
+
+            @include bp(tabletMD){
+                z-index: -1;
+                top: calc(-0% + 100px);
+                height: 100%;
+                border-top-left-radius: 100px;
+            }
+
         }
 
         .image{
@@ -43,6 +75,13 @@
             border-top-right-radius: 50%;
             border: 3px solid white;
 
+            @include bp(tabletMD){
+                width: calc(50vw - 200px);
+                height: calc(50vw - 200px);
+                background-color: red;
+            }
+
+
             img{
                 width: 100%;
                 height: 100%;
@@ -50,15 +89,26 @@
                 user-select: none;
                 pointer-events: none;
             }
-
         }
 
+    }
+
+    .content{
+        @include bp(tabletMD){
+            margin-top: 20px;
+        }
     }
 
     .content_title{
 
         background-color: $color_tercero;
         padding: 30px 20px;
+
+        @include bp(tabletMD){
+            background-color: transparent;
+            padding-top: 100px;
+            padding-bottom: 100px;
+        }
 
         h2{
             text-align: center;
@@ -67,6 +117,15 @@
             color: $color_segundo;
             letter-spacing: 4px;
             margin: 0px;
+
+            @include bp(tabletMD){
+                font-size: rem(27px);
+            }
+    
+            @include bp(laptop){
+                font-size: rem(40px);
+            }
+
         }
 
         p{
@@ -80,6 +139,16 @@
             &:last-of-type{
                 margin-bottom: 0px;
             }
+
+            @include bp(tabletMD){
+                font-size: rem(15px);
+                text-align: left;
+            }
+    
+            @include bp(laptop){
+                font-size: rem(20px);
+            }
+
         }
     
         strong{

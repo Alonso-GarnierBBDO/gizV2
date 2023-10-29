@@ -67,14 +67,21 @@
     @return #{stripUnit($pxValue) / stripUnit(16px)}rem;
 }
 
+
 // Media query
 @mixin bp($point) {
     @if $point == escritorio {
         @media (min-width: 1600px) { @content; }
     }
+
     @else if $point == laptop {
         @media (min-width: 1100px) { @content; }
     }
+
+    @else if $point == tabletMD {
+        @media (min-width: 901px)  { @content; }
+    }
+
     @else if $point == tablet {
         @media (min-width: 700px)  { @content; }
     }
@@ -109,6 +116,7 @@ $color_box_noticias_one: #E9EAF0;
 $color_box_noticias_two: #FFFFFF;
 $color_bottom_noticias: #F6F4F4;
 $color_input: #FAFAFA;
+$color_menu_escritorio: #000000;
 
 // Variables Fonts
 

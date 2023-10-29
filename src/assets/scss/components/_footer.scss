@@ -20,6 +20,11 @@ footer{
         background-repeat: no-repeat;
         z-index: -1;
 
+        @include bp(tabletMD){
+            height: 150px;
+        }
+
+
     }
 
     &::before{
@@ -32,6 +37,12 @@ footer{
         background-color: $color_siete;
         border-top-left-radius: 50px;
         z-index: -1;
+
+        @include bp(tabletMD){
+            border-top-left-radius: 100px;
+            top: 70px;
+        }
+
     }
 
     .image{
@@ -43,6 +54,13 @@ footer{
         user-select: none;
         pointer-events: none;
 
+        @include bp(tabletMD){
+            max-width: 300px;
+            margin: auto;
+            margin-bottom: 20px;
+            margin-top: 70px;
+        }
+
         img{
             width: 50%;
             height: auto;
@@ -52,12 +70,31 @@ footer{
     
     .red_social{
 
+
+        @include bp(tabletMD){
+            max-width: 1000px;
+            margin: auto;
+        }
+
         p{
             text-align: center;
             margin-bottom: 20px;
             font-size: rem(15px);
             font-family: $font_cinco;
             color: $color-segundo;
+
+            @include bp(tabletMD){
+                max-width: 1000px;
+                margin: auto;
+                font-size: rem(15px);
+                margin-bottom: 15px;
+            }
+    
+            @include bp(laptop){
+                font-size: rem(20px);
+            }
+
+
         }
 
         section{
@@ -88,6 +125,13 @@ footer{
         border: none;
         height: 2px;
         background-color: $color_segundo;
+
+        @include bp(tabletMD){
+            max-width: 500px;
+            margin: auto;
+            height: 1px;
+        }
+
     }
 
     .aditional{
@@ -98,6 +142,18 @@ footer{
             font-family: $font_cuarto;
             color: $color-segundo;
             font-size: rem(14px);
+
+            @include bp(tabletMD){
+                max-width: 1000px;
+                margin: auto;
+                font-size: rem(15px);
+                margin-top: 20px;
+            }
+    
+            @include bp(laptop){
+                font-size: rem(20px);
+            }
+
         }
     }
 

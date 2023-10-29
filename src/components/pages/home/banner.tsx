@@ -2,13 +2,16 @@
 
 import { useEffect, useState } from "react"; 
 import BannerImage from '@/assets/img/home_page.png';
+import BannerImageMobile from '@/assets/img/home_page_mobile.png';
 
 function BannerComponent(){
 
     const [heightView, setHeightView] = useState(0);
+    const [bannerImage, setBannerImage] = useState(`linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255,254,253,0) 60%), url(${BannerImage.src})`);
+
     const styleBanner = {
         height: heightView,
-        backgroundImage: `linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255,254,253,0) 60%), url(${BannerImage.src})`,
+        backgroundImage: bannerImage,
     }
 
     
@@ -20,6 +23,11 @@ function BannerComponent(){
         if(headerElement){
             setHeightView(window.innerHeight - headerElement.offsetHeight);
         }
+
+        if(window.innerWidth < 900){
+            setBannerImage(`linear-gradient(0deg, rgb(255, 255, 255) 0%, rgba(255,254,253,0) 60%), url(${BannerImageMobile.src})`);
+        }
+
 
     }, []);
 
