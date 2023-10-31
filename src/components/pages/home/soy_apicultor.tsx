@@ -18,7 +18,7 @@ function SoyApilcultorComponent(){
                 <section className="content">
                     <section>
                         <h2>Soy Apicultor</h2>
-                        <p>Si sos apicultor, te invitamos a continuar con tu desarrollo y capacitación. Pronto te informaremos sobre los talleres y recursos que tenemos para apoyar tu labor</p>
+                        <p>Si sos apicultor, te invitamos a continuar con tu desarrollo y capacitación. Pronto te informaremos sobre los talleres y recursos que tenemos para apoyar tu labor.</p>
                         <a href="#" className="descarga">
                             <Image src={DescargarIcon.src} alt="Logo descargar" width={100} height={100} />
                             Cuaderno del Apicultor
