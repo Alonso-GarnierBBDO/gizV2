@@ -11,7 +11,7 @@ function SoyApilcultorComponent(){
 
     return (
         <>
-            <section className="soy_apicultor_component">
+            <section className="soy_apicultor_component" id="soy-apicultor">
                 <section className="image_abeja">
                     <Image src={AbejaImage.src} alt="Imagen de abejas" width={100} height={100} />
                 </section>

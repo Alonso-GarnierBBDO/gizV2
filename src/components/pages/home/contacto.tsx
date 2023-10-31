@@ -23,7 +23,7 @@ function ContactoFormComponent(){
 
     return(
         <>
-            <section className="contacto_seccion">
+            <section className="contacto_seccion" id='contacto'>
                 <section className='box'>
                     <h2>Contacto</h2>
                     <Box className='form_item'>

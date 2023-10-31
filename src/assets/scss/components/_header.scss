@@ -67,11 +67,9 @@ header{
 }
 
 .menu_item{
-
-    span{
-        font-family: $font_nueve;
-        font-size: rem(15px);
-        color: $color_principal;
-        text-transform: uppercase;
-    }
+    font-family: $font_nueve;
+    font-size: rem(15px);
+    color: $color_principal;
+    text-transform: uppercase;
+    text-decoration: none;
 }

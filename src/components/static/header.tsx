@@ -36,7 +36,35 @@ interface Props {
 function HeaderComponent(props: Props) {
 
   const drawerWidth = 240;
-  const navItems = ["Home", "QUIÉNES SOMOS", "APICULTURA EN CR", "SOY APICULTOR", "NOTICIAS / FAQS",  "SEAMOS VOZ PARA LAS ABEJAS", "CONTACTO"];
+  const navItems = [{
+    title: "Home",
+    href: "#"
+  },
+  {
+    title: "QUIÉNES SOMOS",
+    href : "#quienes",
+  },
+  {
+    title: "APICULTURA EN CR",
+    href : "#apicultura"
+  }, 
+  {
+    title: "SOY APICULTOR",
+    href : "#soy-apicultor"
+  },
+  {
+    title: "NOTICIAS / FAQS",
+    href: "#noticias"
+  }, 
+  {
+    title: "SEAMOS VOZ PARA LAS ABEJAS",
+    href: "#seamos-voz"
+  },
+  {
+    title: "CONTACTO",
+    href: "#contacto"
+  }];
+
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -64,9 +92,9 @@ function HeaderComponent(props: Props) {
     <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
+          <ListItem key={item.title} disablePadding>
             <ListItemButton sx={{ textAlign: "left" }}>
-              <ListItemText className="menu_item" primary={item} />
+              <Link className="menu_item" href={item.href}>{item.title}</Link>
             </ListItemButton>
           </ListItem>
         ))}
@@ -93,16 +121,16 @@ function HeaderComponent(props: Props) {
           >
 
             <Link className="link_escritorio" href="#"> Home </Link>
-            <Link className="link_escritorio" href="#">QUIÉNES SOMOS</Link>
-            <Link className="link_escritorio" href="#" >APICULTURA EN CR</Link>
-            <Link className="link_escritorio" href="#">SOY APICULTOR</Link>
+            <Link className="link_escritorio" href="#quienes">QUIÉNES SOMOS</Link>
+            <Link className="link_escritorio" href="#apicultura" >APICULTURA EN CR</Link>
+            <Link className="link_escritorio" href="#soy-apicultor">SOY APICULTOR</Link>
 
             <Image className="link_mobile" src={Logo.src} alt="Logo" width={100} height={100} />
             <Image className="link_escritorio" src={LogoNormal.src} alt="Logo" width={100} height={100} />
 
-            <Link className="link_escritorio" href="#">NOTICIAS / FAQS</Link>
-            <Link className="link_escritorio" href="#">SEAMOS VOZ PARA LAS ABEJAS</Link>
-            <Link className="link_escritorio" href="#">CONTACTO</Link>
+            <Link className="link_escritorio" href="#noticias">NOTICIAS / FAQS</Link>
+            <Link className="link_escritorio" href="#seamos-voz">SEAMOS VOZ PARA LAS ABEJAS</Link>
+            <Link className="link_escritorio" href="#contacto">CONTACTO</Link>
 
 
             <IconButton

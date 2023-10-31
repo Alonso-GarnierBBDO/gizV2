@@ -23,7 +23,7 @@ function EntrevistasComponent(){
     
     return (
         <>
-            <section className="entrevistas_component">
+            <section className="entrevistas_component" id="seamos-voz">
                 <section className="principal">
                     <section className="borbula">
                         <Image src={BorbujaImagen.src} alt="Imagen de personas con abejas" width={100} height={100} />

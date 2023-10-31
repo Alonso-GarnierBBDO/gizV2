@@ -71,7 +71,7 @@ function NoticiasComponent(){
 
     return(
         <>
-            <section className="noticias_seccion">
+            <section className="noticias_seccion" id="noticias">
                 <section className="image_abeja">
                     <Image src={AbejaImage.src} alt="Imagen de abejas" width={100} height={100} />
                 </section>

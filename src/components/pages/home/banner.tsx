@@ -37,7 +37,7 @@ function BannerComponent(){
                 <section className="circle">
                     <h1>Polinizar <br/> la tierra</h1>
                 </section>
-                <section className="content_absolute">
+                <section className="content_absolute" id='quienes'>
                     <p>Significa que las abejas y su vuelo garantizan la seguridad alimentaria de la población mundial.</p>
                     {/* <section className="group">
                         <a href="">Únete</a>

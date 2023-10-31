@@ -5,7 +5,7 @@ function ApiculturaComponent(){
 
     return (
         <>
-            <section className="apicultura_section">
+            <section className="apicultura_section" id="apicultura">
                 <section className="content_image">
                     <section className="image">
                         <Image src={PersonasAbejasImage.src} alt="Imagen de personas" width={300} height={300} />
