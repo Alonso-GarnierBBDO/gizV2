@@ -13,7 +13,7 @@ function QueBuscamosComponent(){
                             <li>
                                 <p>
                                     <strong>Generar mayor interés </strong>
-                                    en la población de Costa Rica por los productos de la colmena.
+                                    de la población de Costa Rica en los productos de la colmena.
                                 </p>
                             </li>
                             <li>

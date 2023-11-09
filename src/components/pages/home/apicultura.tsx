@@ -8,11 +8,11 @@ function ApiculturaComponent(){
             <section className="apicultura_section" id="apicultura">
                 <section className="content_image">
                     <section className="image">
-                        <Image src={PersonasAbejasImage.src} alt="Imagen de personas" width={300} height={300} />
+                        <Image src={PersonasAbejasImage.src} alt="Imagen de personas" width={700} height={700} />
                     </section>
                 </section>
                 <section className="content_title">
-                    <h2>Apicultura en Costa Rica</h2>
+                    <h2>Apicultura en <br/> Costa Rica</h2>
                     <section className="content">
                         <p>La apicultura produce importantes beneficios por medio de la acción polinizadora de las abejas. </p>
                         <p>

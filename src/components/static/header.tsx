@@ -120,7 +120,7 @@ function HeaderComponent(props: Props) {
           }}
           >
 
-            <Link className="link_escritorio" href="#"> Home </Link>
+            <Link className="link_escritorio" href="/#"> Home </Link>
             <Link className="link_escritorio" href="#quienes">QUIÉNES SOMOS</Link>
             <Link className="link_escritorio" href="#apicultura" >APICULTURA EN CR</Link>
             <Link className="link_escritorio" href="#soy-apicultor">SOY APICULTOR</Link>

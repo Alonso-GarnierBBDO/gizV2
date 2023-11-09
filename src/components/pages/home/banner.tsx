@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"; 
 import BannerImage from '@/assets/img/home_page.png';
-import BannerImageMobile from '@/assets/img/home_page_mobile.png';
+import BannerImageMobile from '@/assets/img/home_page_mobile.jpg';
 
 function BannerComponent(){
 
@@ -36,6 +36,7 @@ function BannerComponent(){
             <section className="bannerHome" style={styleBanner}>
                 <section className="circle">
                     <h1>Polinizar <br/> la tierra</h1>
+                    <p>Significa que las abejas y su vuelo garantizan la seguridad alimentaria de la población mundial.</p>
                 </section>
                 <section className="content_absolute" id='quienes'>
                     <p>Significa que las abejas y su vuelo garantizan la seguridad alimentaria de la población mundial.</p>

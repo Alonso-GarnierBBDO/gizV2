@@ -8,6 +8,30 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import AddIcon from '@mui/icons-material/Add';
 import MinimizeIcon from '@mui/icons-material/Minimize';
 
+
+const preguntasFrecuentes = [
+    {
+        title: "¿Cómo puedo poner en regla mis productos?",
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        title: "¿Por qué es recomendable ser parte de una asociación de apicultores?",
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        title: "¿Cómo saber que la miel es de calidad?",
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        title: "¿Dónde puedo procesar mi miel?",
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+    {
+        title: "¿Dónde puedo aprender sobre apicultura?",
+        content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    },
+];
+
 function PreguntasFrecuentesComponent() {
 
     const [expanded, setExpanded] = useState<string | false>(false);
@@ -15,29 +39,6 @@ function PreguntasFrecuentesComponent() {
     const handleChange = (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : false);
     };
-
-    const preguntasFrecuentes = [
-        {
-            title: "¿Cómo puedo poner en regla mis productos?",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-        },
-        {
-            title: "¿Por qué es recomedable ser parte de una asociación de apicultores?",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-        },
-        {
-            title: "¿Cómo saber que la miel es de calidad?",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-        },
-        {
-            title: "¿Dónde puedo procesar mi miel?",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-        },
-        {
-            title: "¿Dónde puedo aprender sobre apicultura?",
-            content: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
-        },
-    ];
 
 
     return (

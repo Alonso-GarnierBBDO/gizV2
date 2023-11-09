@@ -6,6 +6,12 @@ import DosPinosImage from '@/assets/img/dos_pinos.png';
 import UNAImage from '@/assets/img/una.png';
 import HexagonoSVGComponent from "./constribuir/hexagono_svg";
 
+// Corona morada
+
+import CoronaImage from '@/assets/img/logo_corona_durada.png';
+import GizImage from '@/assets/img/giz_logo.png';
+import ISImage from '@/assets/img/logo_iscorp.jpg';
+
 function ConstribuirComponent(){
 
     return (
@@ -17,13 +23,13 @@ function ConstribuirComponent(){
                             <Image src={MariposasColorsImage.src} alt="Mariposas a colors" width={100} height={100}/>
                         </section>
                         <section className="title">
-                            <h2>¡Todos podemos contribuir!</h2>
+                            <h2>¡Todas las personas podemos contribuir!</h2>
                         </section>
                     </section>
                 </section>
                 <section className="content">
                     <section className="content_sections">
-                        <p>El Movimiento Polinizando Costa Rica es el resultado de alianzas públicas y privadas, nacionales e internacionales: IS Corporación, Corona Dorada y la Agencia de Cooperación Alemana para el Desarrollo (GIZ).</p>
+                        <p>El Movimiento Polinizando Costa Rica es el resultado de alianzas públicas y privadas, nacionales e internacionales: IS Corporación, Corona Dorada y la GIZ (Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH.</p>
                         <div className="escritorio">
                             <p>Las acciones de este Movimiento <strong> traen beneficios directos al sector apícola y consumidores de miel, pero también impactan los Objetivos de Desarrollo Sostenible de Naciones Unidas,</strong> en áreas como crecimiento económico sostenible e inclusivo y prosperidad de la biodiversidad.</p>
                             <p>Por ello, toda la población en general es beneficiada con este proyecto, y todos podemos contribuir.</p>
@@ -50,6 +56,9 @@ function ConstribuirComponent(){
                                 </section>
                                 <section className="text">
                                     <p>Corona Dorada</p>
+                                    <div className="img">
+                                        <Image src={CoronaImage.src} alt="Corona img" width={200} height={200} />
+                                    </div>
                                 </section>
                             </section>
                         </div>
@@ -72,6 +81,9 @@ function ConstribuirComponent(){
                                 </section>
                                 <section className="text">
                                     <p>GIZ</p>  
+                                    <div className="img">
+                                        <Image src={GizImage.src} alt="Giz img" width={200} height={200} />
+                                    </div>
                                 </section>
                             </section>
                         </div>
@@ -94,6 +106,9 @@ function ConstribuirComponent(){
                                 </section>
                                 <section className="text">
                                     <p>IS</p>
+                                    <div className="img">
+                                        <Image src={ISImage.src} alt="IS img" width={200} height={200} />
+                                    </div>
                                 </section>
                             </section>
                         </div>

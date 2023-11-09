@@ -142,16 +142,46 @@ footer{
             font-family: $font_cuarto;
             color: $color-segundo;
             font-size: rem(14px);
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
 
             @include bp(tabletMD){
                 max-width: 1000px;
                 margin: auto;
                 font-size: rem(15px);
                 margin-top: 20px;
+                flex-flow: row;
             }
     
             @include bp(laptop){
                 font-size: rem(20px);
+            }
+
+            img{
+
+                width: auto;
+                height: 120px;
+                margin-right: 15px;
+                margin-top: 15px;
+                
+                &:first-of-type{
+                    height: 70px;
+                    margin-left: 20px;
+                }
+
+                &:nth-of-type(2){
+                    height: 40px;
+                    margin-left: 20px;
+                }
+
+
+                &:last-of-type{
+                    height: 100px;
+                    margin-left: 20px;
+                }
+
             }
 
         }

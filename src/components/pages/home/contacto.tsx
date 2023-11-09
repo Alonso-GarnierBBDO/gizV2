@@ -49,8 +49,9 @@ function ContactoFormComponent(){
                                     onChange={handleChange}
                                 >
                                     <MenuItem value={10}>Soy apicultor</MenuItem>
-                                    <MenuItem value={20}>Soy Lorem</MenuItem>
-                                    <MenuItem value={30}>Soy Ejemplo</MenuItem>
+                                    <MenuItem value={20}>Quiero ser apicultor</MenuItem>
+                                    <MenuItem value={30}>Institución Educativa</MenuItem>
+                                    <MenuItem value={40}>Otro</MenuItem>
                                 </Select>
                             </FormControl>
                         </section>

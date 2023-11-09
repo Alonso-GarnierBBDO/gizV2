@@ -40,39 +40,43 @@
 
     .circle{
 
-        width: 55vw;
-        height: 55vw;
+        width: 65vw;
+        // height: 55vw;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-top-left-radius: 50%;
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%;
-        rotate: 40deg;
-        border: 1px dashed $color_segundo;
+        // border-top-left-radius: 50%;
+        // border-bottom-left-radius: 50%;
+        // border-bottom-right-radius: 50%;
+        // rotate: 40deg;
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        border: 2px dashed $color_segundo;
         z-index: 1;
 
         @include bp(tabletMD){
             width: 40vw;
-            height: 40vw;
-            max-width: 400px;
+            // height: 40vw;
+            max-width: 700px;
             max-height: 400px;
             border: 6px dashed $color_segundo;
             transform: translateX(0%) translateY(0%);
+            flex-flow: column;
         }
 
         @include bp(laptop){
-            transform: translateX(20%) translateY(-20%);
+            transform: translateX(0%) translateY(0%);
         }
 
         h1{
             font-size: rem(35px);
             line-height: 35px;
             text-align: center;
-            rotate: -40deg;
+            // rotate: -40deg;
             color: $color_segundo;
             font-family: $font_primero;
             letter-spacing: 4px;
+            margin: 30px 25px;
 
             @include bp(tabletMD){
                 font-size: rem(64px);
@@ -81,6 +85,32 @@
             }
 
         }
+
+        p{
+            display: none;
+            font-family: $font_cuarto;
+            line-height: 20px;
+            color: $color_cuarto;
+            font-size: rem(14px);
+
+            @include bp(tabletMD){
+                text-align: left;
+                font-size: rem(18px);
+                line-height: initial;
+                display: block;
+                text-align: center;
+                padding: 0px 50px;
+                margin-top: 0px;
+
+            }
+
+            @include bp(laptop){
+                font-size: rem(25px);
+            }
+
+
+        }
+
     }
 
     .content_absolute{
@@ -97,7 +127,9 @@
             margin-bottom: 20px;
             font-size: rem(14px);
 
+
             @include bp(tabletMD){
+                display: none;
                 text-align: left;
                 font-size: rem(18px);
                 max-width: 50%;

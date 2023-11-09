@@ -22,7 +22,7 @@ function AboutComponent(){
                 </section>
                 <section>
                     <h2>Nuestro propósito</h2>
-                    <p>Trabajamos para mejorar las condiciones para una producción sostenible de miel en Costa Rica, aplicando mejores prácticas, comercio justo, aumentando la capacidad de polinización y fortaleciendo la biodiversidad.</p>
+                    <p>Trabajamos en mejorar las condiciones para una producción sostenible de miel en Costa Rica, aplicando mejores prácticas, comercio justo, aumentando la capacidad de polinización y fortaleciendo la biodiversidad.</p>
                 </section>
             </section>
         </>

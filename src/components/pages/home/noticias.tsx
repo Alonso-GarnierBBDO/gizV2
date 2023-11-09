@@ -9,6 +9,7 @@ import AbejaPostImage from '@/assets/img/abeja_post.png';
 import AbejaPostDosImage from '@/assets/img/abeja_post_dos.png';
 import AbejaPostTresImage from '@/assets/img/abeja_post_tres.png';
 import SpinnerImage from '@/assets/img/spinner.svg';
+import Link from "next/link";
 import { useState } from "react";
 
 function NoticiasComponent(){
@@ -32,20 +33,20 @@ function NoticiasComponent(){
             comments: '94',
             views: '32700'
         },
-        {
-            image: AbejaPostDosImage.src,
-            title: 'Las abejas en Costa Rica',
-            type: 'Noticia',
-            comments: '52',
-            views: '65640'
-        },
-        {
-            image: AbejaPostTresImage.src,
-            title: 'Apicultura en CR',
-            type: 'Noticia',
-            comments: '3200',
-            views: '384000'
-        }
+        // {
+        //     image: AbejaPostDosImage.src,
+        //     title: 'Cuidados Esenciales para Proteger a las Abeja',
+        //     type: 'Noticia',
+        //     comments: '52',
+        //     views: '65640'
+        // },
+        // {
+        //     image: AbejaPostTresImage.src,
+        //     title: 'Apicultura en CR',
+        //     type: 'Noticia',
+        //     comments: '3200',
+        //     views: '384000'
+        // }
     ]
 
     const newFormatNumber = (number : number ) => {
@@ -73,18 +74,18 @@ function NoticiasComponent(){
         <>
             <section className="noticias_seccion" id="noticias">
                 <section className="image_abeja">
-                    <Image src={AbejaImage.src} alt="Imagen de abejas" width={100} height={100} />
+                    <Image src={AbejaImage.src} alt="Imagen de abejas" width={500} height={500} />
                 </section>
                 <h2>Noticias</h2>
                 <section className="noticia_destacada">
                     <section className="image">
-                        <Image src={noticiaDestacada.image} alt="Imagen de noticia destacada" width={300} height={300} />
+                        <Image src={noticiaDestacada.image} alt="Imagen de noticia destacada" width={500} height={500} />
                     </section>
                     <section className="content">
                         <h3>{ noticiaDestacada.title }</h3>
                         <p>{noticiaDestacada.introduction}</p>
                     </section>
-                    <a href="">Ver articulo / <span>{noticiaDestacada.type} </span></a>
+                    <Link href="/blog/cuidados-esenciales">Ver articulo / <span>{noticiaDestacada.type} </span></Link>
                     <section className="visualizacion">
                         <section className="vistas">
                             <Image src={EyeImage} alt="Imagen de ojo" width={100} height={100}/>
@@ -104,7 +105,7 @@ function NoticiasComponent(){
                                     <section className="content">
 
                                         <h3>{item.title}</h3>
-                                        <a href="">Ver articulo / <span>{item.type} </span></a>
+                                        <Link href="/blog/biodiversidad-costa-rica">Ver articulo / <span>{item.type} </span></Link>
                                         <section className="visualizacion">
                                             <section className="vistas">
                                                 <Image src={EyeImage} alt="Imagen de ojo" width={100} height={100}/>
@@ -126,7 +127,7 @@ function NoticiasComponent(){
                     }
                 </section>
                 <section className="more_blogs">
-                    <button onClick={moreBlogs} disabled={loading}>
+                    {/* <button onClick={moreBlogs} disabled={loading}>
                         Ver más
                         {
                             loading ? 
@@ -135,7 +136,7 @@ function NoticiasComponent(){
                                 </span>
                                 : ''
                         }
-                    </button>
+                    </button> */}
                 </section>
             </section>
         </>
