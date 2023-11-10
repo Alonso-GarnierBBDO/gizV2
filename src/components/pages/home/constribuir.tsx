@@ -8,7 +8,7 @@ import HexagonoSVGComponent from "./constribuir/hexagono_svg";
 
 // Corona morada
 
-import CoronaImage from '@/assets/img/logo_corona_durada.png';
+import CoronaImage from '@/assets/img/logo_corona_durada_V@.png';
 import GizImage from '@/assets/img/giz_logo.png';
 import ISImage from '@/assets/img/logo_iscorp.jpg';
 
@@ -23,7 +23,7 @@ function ConstribuirComponent(){
                             <Image src={MariposasColorsImage.src} alt="Mariposas a colors" width={100} height={100}/>
                         </section>
                         <section className="title">
-                            <h2>¡Todas las personas podemos contribuir!</h2>
+                            <h2>¡Todas las personas <br/> podemos contribuir!</h2>
                         </section>
                     </section>
                 </section>

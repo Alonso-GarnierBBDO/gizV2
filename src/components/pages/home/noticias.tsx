@@ -105,7 +105,7 @@ function NoticiasComponent(){
                                     <section className="content">
 
                                         <h3>{item.title}</h3>
-                                        <Link href="/blog/biodiversidad-costa-rica">Ver articulo {/*/ <span>{item.type} </span>*/} </Link>
+                                        <Link href="/blog/biodiversidad-costa-rica">Ver artículo {/*/ <span>{item.type} </span>*/} </Link>
                                         {/* <section className="visualizacion">
                                             <section className="vistas">
                                                 <Image src={EyeImage} alt="Imagen de ojo" width={100} height={100}/>

@@ -42,8 +42,8 @@
       .image {
         background-color: $color_siete;
         padding: 10px;
-        height: 20vw;
-        width: 20vw;
+        height: 26vw;
+        width: 26vw;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -86,6 +86,12 @@
         }
 
 
+        br{
+          @include bp(tabletMD){
+            display: none;
+          }
+        }
+
         h2 {
           color: $color_segundo;
           font-family: $font_segundo;
@@ -93,6 +99,8 @@
           width: calc(100% - 10px);
           text-overflow: ellipsis;
           overflow: hidden;
+
+
 
           @include bp(tabletMD){
             font-size: rem(35px);
