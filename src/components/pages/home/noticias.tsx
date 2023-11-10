@@ -19,7 +19,7 @@ function NoticiasComponent(){
     const noticiaDestacada = {
         image: ImagenNoticiaDestacada.src,
         title: 'Cuidados Esenciales para proteger a las abejas',
-        introduction: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum been the industry"s standard',
+        introduction: 'Las abejas desempeñan un papel fundamental en nuestro ecosistema al ser polinizadoras clave de plantas y cultivos. Sin embargo, en los últimos años, se ha observado un preocupante declive en las poblaciones de abejas en todo el mundo debido a diversos factores...',
         type: 'Noticias',
         comments: '104',
         views: '42700'
@@ -85,16 +85,16 @@ function NoticiasComponent(){
                         <h3>{ noticiaDestacada.title }</h3>
                         <p>{noticiaDestacada.introduction}</p>
                     </section>
-                    <Link href="/blog/cuidados-esenciales">Ver articulo / <span>{noticiaDestacada.type} </span></Link>
+                    <Link href="/blog/cuidados-esenciales">Ver articulo {/*/ <span>{noticiaDestacada.type} </span>*/}</Link>
                     <section className="visualizacion">
-                        <section className="vistas">
+                        {/* <section className="vistas">
                             <Image src={EyeImage} alt="Imagen de ojo" width={100} height={100}/>
                             <span> { newFormatNumber(Number(noticiaDestacada.views)) } </span>
                         </section>
                         <section className="comments">
                             <Image src={CommentsImage} alt="Imagen de ojo" width={100} height={100}/>
                             <span> { newFormatNumber(Number(noticiaDestacada.comments)) } Comments</span>
-                        </section>
+                        </section> */}
                     </section>
                 </section>
                 <section className="all_noticias">
@@ -105,8 +105,8 @@ function NoticiasComponent(){
                                     <section className="content">
 
                                         <h3>{item.title}</h3>
-                                        <Link href="/blog/biodiversidad-costa-rica">Ver articulo / <span>{item.type} </span></Link>
-                                        <section className="visualizacion">
+                                        <Link href="/blog/biodiversidad-costa-rica">Ver articulo {/*/ <span>{item.type} </span>*/} </Link>
+                                        {/* <section className="visualizacion">
                                             <section className="vistas">
                                                 <Image src={EyeImage} alt="Imagen de ojo" width={100} height={100}/>
                                                 <span> { newFormatNumber(Number(item.views)) } </span>
@@ -115,7 +115,7 @@ function NoticiasComponent(){
                                                 <Image src={CommentsImage} alt="Imagen de ojo" width={100} height={100}/>
                                                 <span> { newFormatNumber(Number(item.comments)) } Comments</span>
                                             </section>
-                                        </section>
+                                        </section> */}
 
                                     </section>
                                     <section className="image">
