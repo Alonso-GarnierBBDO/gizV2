@@ -85,7 +85,7 @@ function NoticiasComponent(){
                         <h3>{ noticiaDestacada.title }</h3>
                         <p>{noticiaDestacada.introduction}</p>
                     </section>
-                    <Link href="/blog/cuidados-esenciales">Ver articulo {/*/ <span>{noticiaDestacada.type} </span>*/}</Link>
+                    <Link href="/blog/cuidados-esenciales">Ver artículo {/*/ <span>{noticiaDestacada.type} </span>*/}</Link>
                     <section className="visualizacion">
                         {/* <section className="vistas">
                             <Image src={EyeImage} alt="Imagen de ojo" width={100} height={100}/>
