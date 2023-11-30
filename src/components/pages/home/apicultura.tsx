@@ -21,7 +21,7 @@ function ApiculturaComponent(){
                         <p>Es decir, que la apicultura sostenible además de beneficiar al equilibrio ecológico también constituye una importante actividad económica.</p>
                         <p>En Costa Rica, se promueve la apicultura sostenible y se busca evitar el uso excesivo de pesticidas en las zonas donde se crían las abejas. </p>
                         <p>
-                            <strong>Costa Rica es el país que más rápido a revertido la deforestación, teniendo hoy en día 52% de territorio boscoso.</strong>
+                            <strong>Costa Rica es el país que más rápido ha revertido la deforestación, teniendo hoy en día 52% de territorio boscoso.</strong>
                         </p>
                         <p>
                             La calidad de la miel costarricense es <strong> reconocida internacionalmente.</strong>
