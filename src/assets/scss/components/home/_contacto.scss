@@ -83,6 +83,13 @@
 
             }
 
+            span {
+                font-size: rem(13px);
+                color: red;
+                font-family: $font_siete;
+            }
+
+
             input{
                 font-size: rem(13px);
                 font-family: $font_cuarto;   
@@ -140,6 +147,9 @@
             border-radius: 25px;
             color: $color_segundo;
             cursor: pointer;
+            transform: scale(1);
+            transition: .2s ease;
+            border: 2px solid transparent;
 
             @include bp(tabletMD){
                 font-size: rem(15px);
@@ -151,7 +161,37 @@
                 font-size: rem(20px);
             }
 
+            &:hover{
+                transform: scale(0.95);
+                border: 2px solid $color_cinco;
+                background-color: transparent;
+                color: $color_cinco;
+            }
+
+            &:disabled{
+                cursor: no-drop;
+                opacity: 0.8;
+                transform: scale(0.95);
+    
+                &:hover{
+                    transform: scale(0.95);
+                    border: 2px solid transparent;
+                    background-color: $color_cinco;
+                    color: white;
+                }
+    
+            }
+
         }
+
+        strong {
+            font-size: rem(20px);
+            font-family: $font_siete;
+            width: 100%;
+            display: block;
+            text-align: center;
+        }
+
 
     }
 
